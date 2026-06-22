@@ -9,7 +9,7 @@ async function redirect() {
     }
 
     try {
-        const response = await fetch("redirects.json");
+        const response = await fetch("redirect.json");
         const links = await response.json();
 
         if (links[code]) {
